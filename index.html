@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Paper Wallet Generator</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+lmTKXkS+c9d34U9obDdGOZT7zqFicJDkhckYYsW7oenXR37T2OEV4uqfUO45M87" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js" integrity="sha256-9MzwK2kJKBmsJFdccXoIDDtsbWFh8bjYK/C7UjB1Ay0=" crossorigin="anonymous"></script>
+        <script src="js/paperwallet.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mt-3 hidden-print">
+                <div class="form-group w-100">
+                    <h2 class="text-center">Paper Wallet Generator</h2>
+                </div>
+            </div>
+            <div class="row hidden-print">
+                <div class="form-group w-100">
+                    <input id="private_key" class="form-control" type="password" placeholder="Private Key" autocomplete="off"></input>
+                    <i id="show" title="Show Private Key" class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="row hidden-print">
+                <div class="form-group w-100">
+                    <input id="public_address" class="form-control" type="text" placeholder="Public Address" autocomplete="off"></input>
+                </div>
+            </div>
+            <div class="row hidden-print">
+                <div class="form-group w-100">
+                    <button id="generate" class="btn btn-primary pull-right">Generate</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm text-center">
+                    <div id="private_key_qr"></div>
+                    <div id="private_key_text" class="text-wrap"></div>
+                </div>
+                <div class="col-sm text-center">
+                    <div id="public_address_qr"></div>
+                    <div id="public_address_text" class="text-wrap"></div>
+                </div>
+                <div class="col-sm text-center">
+                    <div id="notes" class="rounded"></div>
+                    <div id="notes_text" class="d-none">Notes</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

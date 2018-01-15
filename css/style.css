@@ -1,0 +1,22 @@
+#show
+{
+    cursor: pointer;
+    position: relative;
+    left: 97%;
+    transform: translateY(-200%);
+}
+
+.text-wrap
+{
+    word-wrap: break-word; 
+}
+
+#notes
+{
+    background: rgba(86,61,124,.15);
+}
+
+#notes_text
+{
+    margin-top: 0.4rem;
+}
